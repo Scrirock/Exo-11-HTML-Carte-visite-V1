@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Carte de visite</title>
+    <link rel="stylesheet" href="monCSS.css">
+    <script src="https://kit.fontawesome.com/10b102adea.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <h1 style="text-align: center">Pête Matthias</h1>
-    <div style="text-align: right"><img src="data:image/png;base64,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" alt="Avatar"></div>
-    <div>
-        <p>Age : 20ans</p>
-        <p>Sexe : Homme</p>
-        <p>E-mail : <a href="mailto:matthias.pete@gmail.com">matthias.pete@gmail.com</a></p>
-        <p>GitHub : <a href="https://github.com/Scrirock">github.com/Scrirock</a></p>
-        <p>Mes passion : </p>
-        <ul>
-            <li>Manger
-                <ol type="I">
-                    <li>des lasagnes</li>
-                    <li>de la viande</li>
-                    <li>des chips</li>
-                    <li>des cookies</li>
-                    <li>pas les fourchettes</li>
-                </ol>
-            </li>
-            <li>Les jeux vidéos</li>
-            <li>Lire (mais pas trop)</li>
-            <li>La programmation</li>
-            <li>Les films</li>
-        </ul>
-    </div>
+   <div class="carte">
+       <h1>Pête Matthias</h1>
+       <p>
+           <span class="avant"><i class="fas fa-birthday-cake"></i>Age:</span>
+           <span class="apres"> 20ans</span>
+       </p>
+       <p>
+           <span class="avant"><i class="fas fa-male"></i>Sexe:</span>
+           <span class="apres"> Homme</span>
+       </p>
+       <p>
+           <span class="avant"><i class="fas fa-phone-alt"></i>Fixe:</span>
+           <span class="apres"> 060 51 20 88</span></p>
+       <p>
+           <span class="avant"><i class="fas fa-mobile-alt"></i>GSM:</span>
+           <span class="apres"> 0475 29 27 50</span></p>
+       <p>
+           <span class="avant"><i class="far fa-envelope"></i>Email:</span>
+           <span class="apres"> matthias.pete@gmail.com</span></p>
+       <p>
+           <span class="avant"><i class="fab fa-github"></i>GitHub:</span><a href="https://www.github.com/Scrirock">
+           <span class="apres"> github.com/Scrirock</span></a>
+       </p>
+   </div>
 
 </body>
 </html>
